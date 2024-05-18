@@ -15,7 +15,7 @@ const route = useRoute();
 const currentFilter = computed(() => route.params.filter || 'all');
 
 // 監聽路由變化，根據過濾器設置 store
-watch(currentFilter, (newFilter:string) => {
+watch(currentFilter, (newFilter:any) => {
   todoStore.filter = newFilter;
 });
 

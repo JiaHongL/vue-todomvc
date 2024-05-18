@@ -12,7 +12,7 @@ const addNewTodo = () => {
     newTodo.value = '';
 };
 
-const handleCompositionStart = (event) => {
+const handleCompositionStart = (event:any) => {
   isComposing.value = true;
 };
 
